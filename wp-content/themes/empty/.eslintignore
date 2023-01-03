@@ -1,0 +1,6 @@
+# Ignore folders
+*
+
+# Non ignore folders
+!assets
+!assets/**

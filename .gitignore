@@ -2,7 +2,9 @@
 *
 
 # Non ignore folders
+!wp-content
 !wp-content/themes
+!wp-content/themes/**
 
 # Ignore files
 package-lock.json
@@ -17,3 +19,4 @@ yarn.lock
 !stylelintrc.json
 !wp-config.php
 !.gitignore
+!.eslintignore

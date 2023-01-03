@@ -1,0 +1,14 @@
+# Ignore folders
+/node_modules
+/.cache
+
+# Non ignore folders
+
+# Ignore files
+yarn.lock
+package-lock.json
+*.css.map
+*.js.map
+
+# Non ignore files
+
