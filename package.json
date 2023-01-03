@@ -5,9 +5,14 @@
   "repository": "https://github.com/carolaine-vieira/wordpress-empty",
   "author": "Carolaine Vieira",
   "license": "MIT-3",
+  "config": {
+    "theme": "empty"
+  },
   "scripts": {
     "docker": "docker stop $(docker ps -a -q) && docker-compose up",
-    "install:blocks": "npm install --prefix ./blocks ./",
-    "install:theme": "npm install --prefix ./themes/empty ./"
+    "composer": "composer install",
+    "install:blocks": "npm install --prefix ./wp-content/themes/$npm_package_config_theme/blocks",
+    "install:theme": "npm install --prefix ./wp-content/themes/$npm_package_config_theme",
+    "install:all": "composer install && npm run install:theme && npm run install:blocks"
   }
 }

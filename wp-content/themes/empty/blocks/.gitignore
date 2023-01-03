@@ -1,4 +1,5 @@
 # Ignore folders
+/node_modules
 /.cache
 
 # Non ignore folders
