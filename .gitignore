@@ -20,3 +20,12 @@ yarn.lock
 !wp-config.php
 !.gitignore
 !.eslintignore
+
+
+
+# Force ignore
+
+wp-content/themes/twentytwentyone
+wp-content/themes/twentytwentytwo
+wp-content/themes/twentytwentythree
+wp-content/themes/index.php
