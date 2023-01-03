@@ -1,0 +1,28 @@
+{
+  "name": "blocks",
+  "version": "1.0.0",
+  "description": "Custom blocks config.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolaine-vieira/wordpress-empty.git"
+  },
+  "keywords": [
+    "guttenberg",
+    "wordpress",
+    "blocks"
+  ],
+  "author": "Carolaine Vieira",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/carolaine-vieira/wordpress-empty/issues"
+  },
+  "homepage": "https://github.com/carolaine-vieira/wordpress-empty#readme",
+  "scripts": {
+    "build": "parcel build ./* --public-url ./",
+    "dev": "parcel watch ./* --public-url ./",
+    "lint": "run-s -cl lint:scripts lint:styles",
+    "lint:scripts": "eslint --color --ext .js ./blocks/**/*.js",
+    "lint:styles": "stylelint --color ./styles/**/*.scss"
+  }
+}

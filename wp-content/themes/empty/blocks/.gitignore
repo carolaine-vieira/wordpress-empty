@@ -1,0 +1,10 @@
+# Ignore folders
+/.cache
+
+# Non ignore folders
+
+# Ignore files
+/dist/package.js
+
+# Non ignore files
+

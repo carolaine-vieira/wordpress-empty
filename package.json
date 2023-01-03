@@ -6,6 +6,8 @@
   "author": "Carolaine Vieira",
   "license": "MIT-3",
   "scripts": {
-    "docker": "docker stop $(docker ps -a -q) && docker-compose up"
+    "docker": "docker stop $(docker ps -a -q) && docker-compose up",
+    "install:blocks": "npm install --prefix ./blocks ./",
+    "install:theme": "npm install --prefix ./themes/empty ./"
   }
 }

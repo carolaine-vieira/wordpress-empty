@@ -1,2 +1,2 @@
-import './scripts/index.js'
+import './blocks/index.js'
 import './styles/index.scss'
