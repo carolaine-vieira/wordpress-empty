@@ -1,0 +1,19 @@
+# Ignore folders
+*
+
+# Non ignore folders
+!wp-content/themes
+
+# Ignore files
+package-lock.json
+yarn.lock
+
+# Non ignore files
+!.editorconfig
+!composer.json
+!docker-composer.yml
+!eslintrc.js
+!package.json
+!stylelintrc.json
+!wp-config.php
+!.gitignore

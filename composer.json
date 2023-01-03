@@ -1,0 +1,34 @@
+{
+  "name": "empty/empty.com",
+  "description": "Empty",
+  "require": {
+    "roots/wordpress": "^6.0",
+    "wpackagist-plugin/updraftplus": "^1.22"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "scripts": {
+    "move-wordpress": [
+      "rm -rf wordpress/wp-content/plugins/*",
+      "rm -rf wordpress/wp-content/themes/*",
+      "cp -rf wordpress/* .",
+      "rm -rf wordpress"
+    ],
+    "post-install-cmd": [
+      "@move-wordpress"
+    ],
+    "post-update-cmd": [
+      "@move-wordpress"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "roots/wordpress-core-installer": true,
+      "composer/installers": true
+    }
+  }
+}
