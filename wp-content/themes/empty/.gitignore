@@ -1,12 +1,12 @@
 # Ignore folders
-/node_modules
-/.cache
+node_modules
+.cache
 
 # Non ignore folders
 
 # Ignore files
 yarn.lock
-package-lock.json
+package-lock.*
 *.css.map
 *.js.map
 

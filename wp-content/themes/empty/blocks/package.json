@@ -3,26 +3,8 @@
   "version": "1.0.0",
   "description": "Custom blocks config.",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/carolaine-vieira/wordpress-empty.git"
-  },
-  "keywords": [
-    "guttenberg",
-    "wordpress",
-    "blocks"
-  ],
   "author": "Carolaine Vieira",
   "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/carolaine-vieira/wordpress-empty/issues"
-  },
-  "homepage": "https://github.com/carolaine-vieira/wordpress-empty#readme",
-  "dependencies": {
-    "@wordpress/i18n": "^4.17.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
-  },
   "scripts": {
     "build": "parcel build ./* --public-url ./",
     "dev": "parcel watch ./* --public-url ./",

@@ -24,7 +24,10 @@
   "dependencies": {
     "autoprefixer": "^9.6.5",
     "postcss-loader": "^3.0.0",
-    "postcss-modules": "^1.4.1"
+    "postcss-modules": "^1.4.1",
+    "@wordpress/i18n": "^4.17.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
   "scripts": {
     "build": "parcel build ./assets/* --public-url ./",

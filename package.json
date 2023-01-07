@@ -11,8 +11,6 @@
   "scripts": {
     "docker": "docker stop $(docker ps -a -q) && docker-compose up",
     "composer": "composer install",
-    "install:blocks": "npm install --prefix ./wp-content/themes/$npm_package_config_theme/blocks",
-    "install:theme": "npm install --prefix ./wp-content/themes/$npm_package_config_theme",
-    "install:all": "composer install && npm run install:theme && npm run install:blocks"
+    "install:theme": "npm install --prefix ./wp-content/themes/$npm_package_config_theme"
   }
 }
