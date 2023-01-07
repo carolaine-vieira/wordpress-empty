@@ -1,3 +1,5 @@
 <?php
 
-require_once('inc/theme.php');
+require_once('inc/Theme.php');
+
+$theme = new ThemeConfig();

@@ -2426,7 +2426,7 @@ Object.keys(_createI18n).forEach(function (key) {
 var _defaultI18n = _interopRequireWildcard(require("./default-i18n"));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-},{"./sprintf":"node_modules/@wordpress/i18n/build-module/sprintf.js","./create-i18n":"node_modules/@wordpress/i18n/build-module/create-i18n.js","./default-i18n":"node_modules/@wordpress/i18n/build-module/default-i18n.js"}],"blocks/Supporters/edit.jsx":[function(require,module,exports) {
+},{"./sprintf":"node_modules/@wordpress/i18n/build-module/sprintf.js","./create-i18n":"node_modules/@wordpress/i18n/build-module/create-i18n.js","./default-i18n":"node_modules/@wordpress/i18n/build-module/default-i18n.js"}],"blocks/Example/edit.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2448,15 +2448,17 @@ var SupportersEditor = function SupportersEditor() {
         justifyContent: 'center'
       }
     }, [['core/heading', {
-      content: (0, _i18n.__)('Apoio', 'caboverde'),
-      textColor: 'secondary',
+      content: (0, _i18n.__)('Title', 'empty'),
+      textAlign: 'center',
       level: 2
-    }], ['app/supporters-carousel']]]]
+    }], ['core/paragraph', {
+      content: (0, _i18n.__)('Text example', 'empty')
+    }]]]]
   }));
 };
 var _default = SupportersEditor;
 exports.default = _default;
-},{"@wordpress/i18n":"node_modules/@wordpress/i18n/build-module/index.js"}],"blocks/Supporters/save.jsx":[function(require,module,exports) {
+},{"@wordpress/i18n":"node_modules/@wordpress/i18n/build-module/index.js"}],"blocks/Example/save.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2472,7 +2474,7 @@ var SupportersSave = function SupportersSave() {
 };
 var _default = SupportersSave;
 exports.default = _default;
-},{}],"blocks/Supporters/index.jsx":[function(require,module,exports) {
+},{}],"blocks/Example/index.jsx":[function(require,module,exports) {
 "use strict";
 
 var _i18n = require("@wordpress/i18n");
@@ -2480,10 +2482,9 @@ var _edit = _interopRequireDefault(require("./edit"));
 var _save = _interopRequireDefault(require("./save"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var registerBlockType = wp.blocks.registerBlockType;
-registerBlockType('app/supporters', {
-  title: (0, _i18n.__)('Apoiadores', 'caboverde'),
-  description: (0, _i18n.__)('Exibe a lista de Apoiadores cadastrados', 'caboverde'),
-  icon: 'shield-alt',
+registerBlockType('app/example-block', {
+  title: (0, _i18n.__)('Empty Theme Example Block', 'empty'),
+  description: (0, _i18n.__)('Display a example block', 'empty'),
   category: 'theme',
   edit: function edit(props) {
     return /*#__PURE__*/React.createElement(_edit.default, props);
@@ -2492,11 +2493,11 @@ registerBlockType('app/supporters', {
     return /*#__PURE__*/React.createElement(_save.default, props);
   }
 });
-},{"@wordpress/i18n":"node_modules/@wordpress/i18n/build-module/index.js","./edit":"blocks/Supporters/edit.jsx","./save":"blocks/Supporters/save.jsx"}],"blocks/index.js":[function(require,module,exports) {
+},{"@wordpress/i18n":"node_modules/@wordpress/i18n/build-module/index.js","./edit":"blocks/Example/edit.jsx","./save":"blocks/Example/save.jsx"}],"blocks/index.js":[function(require,module,exports) {
 "use strict";
 
-require("./Supporters/index");
-},{"./Supporters/index":"blocks/Supporters/index.jsx"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+require("./Example");
+},{"./Example":"blocks/Example/index.jsx"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {

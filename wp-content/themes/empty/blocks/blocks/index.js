@@ -1,1 +1,1 @@
-import './Supporters/index'
+import './Example'

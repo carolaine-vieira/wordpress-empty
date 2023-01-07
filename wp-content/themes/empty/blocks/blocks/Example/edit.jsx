@@ -24,12 +24,17 @@ const SupportersEditor = () => {
                 [
                   'core/heading',
                   {
-                    content: __('Apoio', 'caboverde'),
-                    textColor: 'secondary',
+                    content: __('Title', 'empty'),
+                    textAlign: 'center',
                     level: 2,
                   },
                 ],
-                ['app/supporters-carousel']
+                [
+                  'core/paragraph',
+                  {
+                    content: __('Text example', 'empty')
+                  },
+                ],
               ]
             ]
           ]
